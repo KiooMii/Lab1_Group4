@@ -5,6 +5,7 @@ public class Date implements Comparable {
     int month; // Month number in range 1 to 12
     int day; // Day number in range 1 to 31
     int year; // Year Number
+    static int hash;
     
     Date(){
     }
@@ -55,5 +56,12 @@ public class Date implements Comparable {
           return 1;  
         } 
     }
+    
+    @Override
+    public String toString(){
+        return month + " " + day + ", " + year;
+    }
+    
+  
     
 }

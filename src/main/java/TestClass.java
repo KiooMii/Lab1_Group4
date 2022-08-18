@@ -6,32 +6,21 @@ public class TestClass {
     public static void main(String args[]){
         Date date1 = new Date(7, 6, 2002);
         Date date2 = new Date(1, 1, 2024);
-        Date date = new Date();
+        Date date = new Date(9, 1, 2002);
         
-        
-         for(int i = 0; i < 30; i++){
-             dates.add(new Date(9, i+1, 2002)); 
+        for(int i = 1; i<31; i++){
+            dates.add(new Date(9, i, 2002));
         }
+        
          
-         Date[] adate = new Date[dates.size()];
-         adate = dates.toArray(adate);
          
-         for(int i = 0; i < 30; i++){
-             syllabus.put(adate[i], adate[i].toString());
-             adate.hashCode();
-         }
-         
-    
-         
-//         for(Date x : adate){
-//         System.out.print(x);
-//         }
-         
-//            syllabus.put(date1, date1.toString());
-//            syllabus.put(date2, date2.toString());
-         
+            syllabus.put(dates.get(1), "tae");
+            syllabus.put(dates.get(2), "poop");
+            syllabus.put(dates.get(3), "ebak");
+            
          System.out.println(syllabus.size());
-         System.out.println(syllabus.keySet());
+         System.out.println(syllabus.values());
+//         System.out.println(syllabus.keySet());
          System.out.println(dates.size());       
         
     }

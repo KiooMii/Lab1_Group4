@@ -13,9 +13,7 @@ public class Problem3{
                                            
             if (info != null)
             System.out.println("September " + day + ": " + info);
-      }
-        
-        
+      }  
     }
     
     

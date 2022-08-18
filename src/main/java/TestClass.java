@@ -12,15 +12,13 @@ public class TestClass {
             dates.add(new Date(9, i, 2002));
         }
         
-         
-         
-            syllabus.put(dates.get(1), "tae");
-            syllabus.put(dates.get(2), "poop");
-            syllabus.put(dates.get(3), "ebak");
+        syllabus.put(dates.get(0), dates.get(0).toString());
+        syllabus.put(dates.get(1), dates.get(1).toString());
+        
             
          System.out.println(syllabus.size());
          System.out.println(syllabus.values());
-//         System.out.println(syllabus.keySet());
+         System.out.println(syllabus.keySet());
          System.out.println(dates.size());       
         
     }
